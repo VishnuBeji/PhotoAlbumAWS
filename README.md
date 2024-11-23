@@ -4,6 +4,8 @@
 
 This project is a **Photo Album Web Application** that enables users to upload photos and search through them using **natural language queries**. By utilizing **AWS AI and serverless technologies**, the application intelligently indexes photos based on detected objects, people, actions, and landmarks. Users can search for photos with specific keywords or phrases like _"show me photos with trees and birds."_.
 
+![Photo Album Application](assets/image1.jpg)
+
 ## Features
 
 - **Photo Upload**: Users can upload photos with custom labels.
