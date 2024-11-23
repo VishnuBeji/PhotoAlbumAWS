@@ -1,0 +1,39 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.12
+    commands:
+      - python -m pip install --upgrade pip  # Upgrade pip to its latest version
+
+  pre_build:
+    commands:
+      - echo "Starting pre-build phase"
+
+  build:
+    commands:
+      # Package index-photos Lambda function
+      - cd LF1
+      - zip -r9 ${CODEBUILD_SRC_DIR}/index-photos.zip lambda_function.py
+      - rm lambda_function.py  # Clean up
+      - cd ..
+
+      # Package search-photos Lambda function
+      - cd LF2
+      - zip -r9 ${CODEBUILD_SRC_DIR}/search-photos.zip lambda_function.py
+      - rm lambda_function.py  # Clean up
+      - cd ..
+
+  post_build:
+    commands:
+      - echo "Updating index-photos Lambda function"
+      - aws lambda update-function-code --function-name index-photos --zip-file fileb://index-photos.zip
+
+      - echo "Updating search-photos Lambda function"
+      - aws lambda update-function-code --function-name search-photos --zip-file fileb://search-photos.zip
+
+artifacts:
+  files:
+    - index-photos.zip
+    - search-photos.zip
