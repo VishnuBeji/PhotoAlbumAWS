@@ -1,7 +1,7 @@
 # Photo Album Web Application with Intelligent Search
 
 ## Video Demo
-[![Watch the Demo Video](assets/video-thumbnail.jpg)]([https://www.example.com/demo-video](https://youtu.be/2seHHt7JHSc)))
+[![Watch the Demo Video](assets/video-thumbnail.png)](https://youtu.be/2seHHt7JHSc)
 
 [Watch the Demo Video]([[https://www.example.com/demo-video](https://youtu.be/2seHHt7JHSc)])
 ## Overview
