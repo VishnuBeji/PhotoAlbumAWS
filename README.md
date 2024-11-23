@@ -3,7 +3,7 @@
 ## Video Demo
 [![Watch the Demo Video](assets/video-thumbnail.jpg)]([https://www.example.com/demo-video](https://youtu.be/2seHHt7JHSc)))
 
-[Watch the Demo Video]([https://www.example.com/demo-video](https://youtu.be/2seHHt7JHSc))
+[Watch the Demo Video]([[https://www.example.com/demo-video](https://youtu.be/2seHHt7JHSc)])
 ## Overview
 
 This project is a **Photo Album Web Application** that enables users to upload photos and search through them using **natural language queries**. By utilizing **AWS AI and serverless technologies**, the application intelligently indexes photos based on detected objects, people, actions, and landmarks. Users can search for photos with specific keywords or phrases like _"show me photos with trees and birds."_.
